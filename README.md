@@ -29,4 +29,4 @@ class Solution {
 }
 ```
 
-### Note : The most important part was writing the comparator method, Double.compare(p1.distance, p2.distance).
+## Note : The most important part was getting the comparator method right, Double.compare(p1.distance, p2.distance)
