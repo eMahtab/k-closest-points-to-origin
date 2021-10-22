@@ -28,3 +28,5 @@ class Solution {
     }
 }
 ```
+
+### Note : The most important part was writing the comparator method, Double.compare(p1.distance, p2.distance).
