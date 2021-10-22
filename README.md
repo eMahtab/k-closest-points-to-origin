@@ -32,7 +32,7 @@ class Solution {
 ## Note : The most important part was getting the comparator method right, Double.compare(p1.distance, p2.distance)
 
 
-## Variant : If two points are exact same distance apart(there is tie) then choose the co-ordinate with least x value.
+### Variant : If two points are exact same distance apart(there is tie) then choose the co-ordinate with least x value.
 
 ```java
 class Solution {
@@ -53,7 +53,8 @@ class Solution {
        Collections.sort(list, (p1, p2) ->  {
               if(p1.distance == p2.distance) {
                   return p1.x - p2.x; 
-                  /** Tie Situation : if question is looking for nearest point with x value, regardless of whether x value is positive or negative
+                  /** Tie Situation : if question is looking for nearest point with x value, 
+                      regardless of whether x value is positive or negative
                       then return Math.abs(p1.x) - Math.abs(p2.x); **/
               } else 
                 return Double.compare(p1.distance, p2.distance);
